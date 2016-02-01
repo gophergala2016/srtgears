@@ -1,3 +1,5 @@
+// +build appengine
+
 /*
 
 Package sgw is the backend logic for the online Srtgears.

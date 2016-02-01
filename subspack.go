@@ -101,7 +101,7 @@ func (sp *SubsPack) Merge(sp2 *SubsPack) {
 	sp.SetPos(PosNotSpecified)
 
 	// Put other subtitles to the top:
-	sp.SetPos(Top)
+	sp2.SetPos(Top)
 
 	// Append:
 	sp.Subs = append(sp.Subs, sp2.Subs...)
@@ -147,7 +147,7 @@ func (sp *SubsPack) RemoveControl() {
 	}
 }
 
-// Lengthen lenthens the display duration of all subtitles.
+// Lengthen lengthens the display duration of all subtitles.
 func (sp *SubsPack) Lengthen(factor float64) {
 	for _, s := range sp.Subs {
 		s.Lengthen(factor)
